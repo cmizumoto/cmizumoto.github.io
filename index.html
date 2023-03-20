@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Caio Mizumoto Portfolio</title>
+    <script type="module" crossorigin src="/assets/index-860776ad.js"></script>
+    <link rel="stylesheet" href="/assets/index-2a9077d9.css">
+  </head>
+  <body>
+    <nav id="home" class="navigation">
+      <ul class="navigation__items">
+        <li class="navigation__item">
+          <a href="/src/pages/about.html" class="button button__navigation">About</a>
+        </li>
+        <li class="navigation__item">
+          <a href="/src/pages/portfolio.html" class="button button__navigation">Portfolio</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#contact" class="button button__navigation">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <div class="header__text-box">
+        <h1 class="heading-1">Caio Mizumoto</h1>
+        <h2 class="heading-2">Frontend developer</h2>
+        <p class="header__text">
+          Hello! I make websites for small companies, also spend my free time with game development
+          and pixel art! Currently living in São Paulo, Brazil.
+        </p>
+        <div class="header__contact">
+          <ul class="header__contact-list">
+            <li>
+              <a class="header__contact-link" href="#contact">Contact Me</a>
+            </li>
+            <li>
+              <a class="header__contact-link" href="https://github.com/cmizumoto" target="_blank"
+                ><img src="data:image/png;base64,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" alt="" /> Github</a
+              >
+            </li>
+            <li>
+              <a
+                class="header__contact-link"
+                href="https://www.linkedin.com/in/caio-mizumoto-683a7323/"
+                target="_blank"
+                ><img src="data:image/png;base64,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" alt="" /> Linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__image">
+        <img src="/assets/myself-f16fb506.png" alt="Photo of Caio" />
+      </div>
+
+      <ul class="background__animated">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </header>
+
+    <div class="logos">
+      <div class="logos__container">
+        <div class="logos__slide"></div>
+      </div>
+    </div>
+
+    <section class="portfolio">
+      <div class="portfolio__container">
+        <div class="portfolio__card">
+          <figure class="portfolio__figure">
+            <img
+              class="portfolio__image"
+              src="/assets/project1-f0f36500.jpg"
+              alt="Mangostay website image"
+            />
+            <div class="portfolio__content">
+              <p>
+                Template for a fictional booking company, uses display: flex for everything, the
+                objective was to make the most of it using align, justify, wrap, grow, shrink and
+                order. The design was based of a project given in an Udemy course.
+              </p>
+              <a
+                class="portfolio__link"
+                href="https://neon-lebkuchen-7ff4c6.netlify.app/"
+                target="_blank"
+                >Check the live version</a
+              >
+            </div>
+            <div class="portfolio__icons">
+              <img class="portfolio__icon" src="/assets/html-de98d48c.png" alt="html logo" />
+              <img class="portfolio__icon" src="/assets/sass-fa4fc801.png" alt="sass logo" />
+            </div>
+            <figcaption class="portfolio__caption">Mangostay - Template Website</figcaption>
+          </figure>
+        </div>
+        <div class="portfolio__card">
+          <figure class="portfolio__figure">
+            <img
+              class="portfolio__image"
+              src="/assets/project2-024bda0b.jpg"
+              alt="John Doe portfolio website image"
+            />
+            <div class="portfolio__content">
+              <p>
+                Basic template website for a portfolio, it has more pages to it like work, about and
+                contact. Used also some javascript to make the typewrite effect in the hero section.
+              </p>
+              <a
+                class="portfolio__link"
+                href="https://youthful-wilson-965c08.netlify.app/"
+                target="_blank"
+                >Check the live version</a
+              >
+            </div>
+            <div class="portfolio__icons">
+              <img class="portfolio__icon" src="/assets/html-de98d48c.png" alt="html logo" />
+              <img class="portfolio__icon" src="/assets/css-b107178a.png" alt="html logo" />
+              <img class="portfolio__icon" src="/assets/js-a589ac06.png" alt="sass logo" />
+            </div>
+            <figcaption class="portfolio__caption">John Doe - Template Portfolio</figcaption>
+          </figure>
+        </div>
+        <div class="portfolio__card">
+          <figure class="portfolio__figure">
+            <img
+              class="portfolio__image"
+              src="/assets/project3-a6b35de8.jpg"
+              alt="Newsgrid website image"
+            />
+            <div class="portfolio__content">
+              <p>
+                Newsgrid makes a good mix with flex and grid, media queries works way better in this
+                case, since grid adapts well to smaller resolutions. This project was most to get
+                started with grid and how to place things inside.
+              </p>
+              <a
+                class="portfolio__link"
+                href="https://newsgridtestwebsite.netlify.app/"
+                target="_blank"
+                >Check the live version</a
+              >
+            </div>
+            <div class="portfolio__icons">
+              <img class="portfolio__icon" src="/assets/html-de98d48c.png" alt="html logo" />
+              <img class="portfolio__icon" src="/assets/css-b107178a.png" alt="html logo" />
+            </div>
+            <figcaption class="portfolio__caption">
+              Newsgrid - Template for a news website
+            </figcaption>
+          </figure>
+        </div>
+        <div class="portfolio__card">
+          <figure class="portfolio__figure">
+            <img
+              class="portfolio__image"
+              src="/assets/project4-a1e6149c.jpg"
+              alt="Mangocars website image"
+            />
+            <div class="portfolio__content">
+              <p>
+                This project was similar to Mangostay, everything was made using grid templates and
+                its properties, fun project since grid makes everything easier to place. Also based
+                on a design given in a Udemy Course.
+              </p>
+              <a
+                class="portfolio__link"
+                href="https://marvelous-lamington-e841c5.netlify.app/"
+                target="_blank"
+                >Check the live version</a
+              >
+            </div>
+            <div class="portfolio__icons">
+              <img class="portfolio__icon" src="/assets/html-de98d48c.png" alt="html logo" />
+              <img class="portfolio__icon" src="/assets/sass-fa4fc801.png" alt="html logo" />
+            </div>
+            <figcaption class="portfolio__caption">
+              Mangocars - Template for a car Dealership
+            </figcaption>
+          </figure>
+        </div>
+        <div class="portfolio__card">
+          <figure class="portfolio__figure">
+            <img
+              class="portfolio__image"
+              src="/assets/project5-bc9c1957.jpg"
+              alt="Gamecoach website image"
+            />
+            <div class="portfolio__content">
+              <p>
+                This project was made to study and have a knowledge check on my Vue skills, making a
+                single page application, calling APIs for data, making a database in firebase to
+                store users and favorite games, ways for users to check messages, pagination system
+                that took sometime to figure out.
+              </p>
+              <a
+                class="portfolio__link"
+                href="https://gamecoaches-e8335.web.app/coaches"
+                target="_blank"
+                >Check the live version</a
+              >
+            </div>
+            <div class="portfolio__icons">
+              <img class="portfolio__icon" src="/assets/html-de98d48c.png" alt="html logo" />
+              <img class="portfolio__icon" src="/assets/vue-9d2b301a.png" alt="html logo" />
+              <img class="portfolio__icon" src="/assets/pinia-53b66c9c.png" alt="html logo" />
+              <img class="portfolio__icon" src="/assets/firebase-39839661.png" alt="html logo" />
+            </div>
+            <figcaption class="portfolio__caption">
+              GameCoach - Application to find games and people
+            </figcaption>
+          </figure>
+        </div>
+        <div class="portfolio__card">
+          <figure class="portfolio__figure">
+            <img
+              class="portfolio__image"
+              src="/assets/project6-f3d6eeca.jpg"
+              alt="Mango Clothing website image"
+            />
+            <div class="portfolio__content">
+              <p>
+                Almost like GameCoach project, but in this one I followed a Udemy Course, since I
+                was still learning React and styled components. Overall a solid project, uses redux,
+                typescript, sagas, Stripe API, styled components and other dependancies, also
+                firebase to login with google and register as a new user.
+              </p>
+              <a class="portfolio__link" href="https://mango-clothing.netlify.app/" target="_blank"
+                >Check the live version</a
+              >
+            </div>
+            <div class="portfolio__icons">
+              <img class="portfolio__icon" src="/assets/html-de98d48c.png" alt="html logo" />
+              <img class="portfolio__icon" src="/assets/react-1fdc9724.png" alt="html logo" />
+              <img class="portfolio__icon" src="/assets/redux-7db59d6b.png" alt="html logo" />
+              <img class="portfolio__icon" src="/assets/firebase-39839661.png" alt="html logo" />
+            </div>
+            <figcaption class="portfolio__caption">
+              Mango Clothing - Online Shopping Website
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <a href="/src/pages/portfolio.html" class="portfolio__button">Check more works here &rarr;</a>
+    </section>
+
+    <!-- we will use JS to make this animation start when the window reach this place -->
+    <!-- Using loop, value in the skill, already made sure to put 3.6deg in the style -->
+    <section class="skill">
+      <h2 class="heading-2 skill__title">Proficiencies</h2>
+      <div class="skill__container">
+        <div class="skill__competency">
+          <div class="skill__bar" id="skill-html">
+            <span class="skill__value" id="value-html">90%</span>
+          </div>
+          <span class="skill__text">HTML / CSS / SASS</span>
+        </div>
+        <div class="skill__competency">
+          <div class="skill__bar" id="skill-js">
+            <span class="skill__value" id="value-js">80%</span>
+          </div>
+          <span class="skill__text">Javascript</span>
+        </div>
+        <div class="skill__competency">
+          <div class="skill__bar" id="skill-vue">
+            <span class="skill__value" id="value-vue">70%</span>
+          </div>
+          <span class="skill__text">Vue.js</span>
+        </div>
+        <div class="skill__competency">
+          <div class="skill__bar" id="skill-react">
+            <span class="skill__value" id="value-react">65%</span>
+          </div>
+          <span class="skill__text">React</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="heading-2 contact__title">Contact Me</h2>
+      <div class="contact__container">
+        <form
+          action="https://formsubmit.co/4fc6f9acdf693c96e3e3a05b15eb8fe9"
+          class="contact__form"
+          method="POST"
+        >
+          <div class="contact__form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="contact__form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="contact__form-control">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="contact__submit">Submit <span>&rarr;</span></button>
+        </form>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer__container">
+        <ul class="footer__links">
+          <li><a class="button button__footer" href="#home">Home</a></li>
+          <li><a class="button button__footer" href="#">About</a></li>
+          <li><a class="button button__footer" href="#">Portfolio</a></li>
+          <li><a class="button button__footer" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="footer__copy">
+          <p>&copy; 2023 Caio Mizumoto, All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
