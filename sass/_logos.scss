@@ -1,0 +1,35 @@
+.logos {
+  display: flex;
+  align-items: center;
+  transform: translateY(50%);
+
+  &__container {
+    margin: 3rem auto;
+    height: 150px;
+    width: 1000px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: $color-secondary;
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+  }
+  &__slide {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    background-image: url("../assets/gallery3.png");
+    background-repeat: repeat-x;
+    height: 100%;
+    width: 3525px;
+    animation: moveSlide 15s linear infinite;
+    // width: 352.5%; // for 100rem
+    // width: 503.5%; // for 70rem
+    z-index: 10;
+  }
+}
+
+@keyframes moveSlide {
+  100% {
+    transform: translateX(-66.666%);
+  }
+}

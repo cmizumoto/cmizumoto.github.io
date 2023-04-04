@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap");
+
+.heading-1 {
+  font-size: 7rem;
+  font-weight: 400;
+
+  @media only screen and (max-width: $mq-smallest) {
+    line-height: 8rem;
+  }
+}
+.heading-2 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+.heading-3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.heading-4 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.centered {
+  text-align: center;
+}
+
+.page {
+  &__title {
+    margin-bottom: 2rem;
+  }
+  &__subtitle {
+    width: 100%;
+    margin: 2rem 0;
+    color: $color-secondary-dark;
+    font-size: 5rem;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &::before,
+    &::after {
+      content: "";
+      background-color: $color-secondary;
+      width: 30rem;
+      height: 2px;
+      transition: all 1s;
+
+      @media only screen and (max-width: $mq-medium-2) {
+        display: none;
+      }
+    }
+
+    &:hover::before {
+      margin-left: 10rem;
+    }
+    &:hover::after {
+      margin-right: 10rem;
+    }
+  }
+}

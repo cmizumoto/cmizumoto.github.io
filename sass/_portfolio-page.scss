@@ -1,0 +1,162 @@
+.portfolio-page {
+  padding: 5rem 0;
+  background-color: $color-grey-1;
+
+  &__figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: linear-gradient(
+        to bottom,
+        rgba($color-secondary, 0.5),
+        rgba($color-secondary, 1)
+      );
+      border-radius: 5px;
+      width: 101%;
+      height: 40%;
+      bottom: -3rem;
+      opacity: 0;
+      transition: all 0.3s;
+      z-index: 3;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__container {
+    margin: 5rem auto;
+    max-width: $width-container;
+    display: grid;
+    align-content: center;
+    justify-content: space-between;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(32.5rem, 1fr));
+    grid-auto-rows: min-content;
+    column-gap: 6rem;
+    row-gap: 6rem;
+  }
+
+  &__caption {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    color: $color-secondary-dark;
+    z-index: 4;
+  }
+
+  &__caption--text {
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &:link,
+    &:visited {
+      color: $color-secondary-dark;
+    }
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+
+    &::before,
+    &::after {
+      transition: all 0.3s;
+      opacity: 0;
+    }
+
+    &::before {
+      content: "\003E";
+      margin-right: 1.5rem;
+    }
+    &::after {
+      content: "\003C";
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+.image-container {
+  width: 95%;
+  height: 95%;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: all 0.3s;
+  z-index: 5;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(#495465, 0), rgba(#5b687d, 0));
+    transition: all 0.3s;
+    z-index: 20;
+  }
+}
+
+// HOVER ACTION ON THE FIGURE
+.portfolio-page__figure {
+  &:hover {
+    &::after {
+      height: 70%;
+      opacity: 1;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    }
+
+    & .image-container {
+      transform: translateY(1rem);
+      box-shadow: none;
+    }
+
+    & .image-container::after {
+      background-image: linear-gradient(to bottom, rgba(#495465, 0.1), rgba(#5b687d, 1));
+    }
+
+    & .portfolio-page__caption {
+      color: $color-primary;
+    }
+
+    & .portfolio-page__caption--text {
+      justify-content: space-around;
+
+      &:link,
+      &:visited {
+        color: $color-primary;
+      }
+
+      &:hover {
+        color: $color-grey-1;
+
+        &::before {
+          margin-right: 1rem;
+        }
+        &::after {
+          margin-left: 1rem;
+        }
+      }
+
+      &::before {
+        opacity: 1;
+      }
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}

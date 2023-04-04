@@ -1,0 +1,86 @@
+.skill {
+  text-align: center;
+  background-image: linear-gradient(120deg, rgba(65, 80, 107, 0.8), rgba(38, 56, 73, 0.8)),
+    url("/public/assets/florian-krumm-keyboard.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 10rem 0;
+
+  @media only screen and (max-width: $mq-medium) {
+    padding: 5rem 0;
+  }
+
+  &__title {
+    margin-bottom: 5rem;
+  }
+
+  &__container {
+    font-size: 1.6rem;
+
+    margin: 0 auto;
+    max-width: $width-container;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $mq-medium) {
+      max-width: 500px;
+      gap: 2rem;
+    }
+
+    @media only screen and (max-width: $mq-smallest) {
+      justify-content: center;
+    }
+  }
+
+  &__competency {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $color-grey-3;
+
+    @media only screen and (max-width: $mq-medium) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__bar {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    background: conic-gradient($color-primary-dark 3.6deg, $color-grey-3 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 3s ease;
+  }
+
+  &__bar::before {
+    content: "";
+    position: absolute;
+    width: 21rem;
+    height: 21rem;
+    border-radius: 50%;
+    background-color: $color-secondary;
+  }
+
+  &__value {
+    position: relative;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: $color-primary;
+  }
+
+  &__text {
+    font-size: 2rem;
+    display: block;
+    margin-top: 2rem;
+  }
+}

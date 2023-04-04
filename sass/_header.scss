@@ -1,0 +1,116 @@
+.header {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  max-width: $width-container;
+  margin: 0 auto;
+
+  @media only screen and (max-width: $mq-small) {
+    text-align: center;
+    justify-content: center;
+  }
+
+  &__text-box {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    transition: all 0.4s;
+
+    @media only screen and (max-width: $mq-medium) {
+      padding-left: 0;
+      max-width: 70%;
+    }
+
+    @media only screen and (max-width: $mq-small) {
+      align-items: center;
+      max-width: 100%;
+      margin-bottom: -30rem;
+      justify-content: end;
+    }
+  }
+  &__text {
+    font-size: 1.6rem;
+  }
+  &__image {
+    padding-right: 2rem;
+    width: 50%;
+
+    @media only screen and (max-width: $mq-medium) {
+      padding-right: 0;
+    }
+
+    & img {
+      border-radius: 50%;
+      border: 0.5rem $color-primary solid;
+      max-width: 50rem;
+
+      @media only screen and (max-width: $mq-medium) {
+        width: 100%;
+        max-width: 30rem;
+      }
+    }
+
+    @media only screen and (max-width: $mq-small) {
+      position: absolute;
+      top: 12%;
+    }
+
+    @media only screen and (max-width: $mq-smallest) {
+      top: 25%;
+    }
+  }
+  &__contact {
+    margin-top: 2rem;
+
+    &-list {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+
+      &:first-child {
+        margin-left: -1rem;
+      }
+    }
+
+    &-link:visited,
+    &-link:link {
+      border-radius: 3px;
+      font-size: 2rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: $color-primary;
+      padding: 1rem;
+      background-color: transparent;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        rgba(#fff, 0.6) 50%
+      );
+      background-size: 230%;
+      transition: all 0.4s;
+
+      &:hover,
+      &:active {
+        background-position: 100%;
+        color: $color-secondary-dark;
+      }
+    }
+
+    &-link {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    &-link img {
+      width: 2.5rem;
+      filter: invert(200%) brightness(500%);
+    }
+
+    &-link:hover img {
+      filter: invert(0%) brightness(0%);
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.navigation {
+  margin-bottom: 3rem;
+
+  &__items {
+    font-size: 2rem;
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    @media only screen and (max-width: $mq-small) {
+      gap: 0;
+    }
+
+    @media only screen and (max-width: $mq-smallest) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    margin-top: 2rem;
+
+    @media only screen and (max-width: $mq-smallest) {
+      margin-bottom: 1.75rem;
+    }
+  }
+}
